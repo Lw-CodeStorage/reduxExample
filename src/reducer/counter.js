@@ -1,10 +1,8 @@
 
-let counter = (state = 10, action) => {
+let counter = (state = [], action) => {
     switch (action.type) {
-        case 'increment':
-            return state + 1
-        case 'decrement':
-            return state - 1
+        case 'init':
+            return[...state,{id:action.id}]
         default:
             return state
     }
