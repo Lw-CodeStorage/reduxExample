@@ -8,11 +8,12 @@ export default function Test() {
     let dispatch = useDispatch()
     React.useEffect(()=>{
         //執行 inline action
-         dispatch({type:'init',id:'10'})
+         dispatch({type:'sign_in'})
+         dispatch({type:'init',text:"已初始化"})
     },[])
     return (
         <>
-            <p>Counter:{counter}</p>
+            <p>Counter:{counter['text']}</p> 
         </>
     )
 }

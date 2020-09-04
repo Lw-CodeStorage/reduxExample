@@ -1,8 +1,8 @@
 
-let counter = (state = [], action) => {
+let counter = (state = {text:"未初始化"}, action) => {
     switch (action.type) {
         case 'init':
-            return[...state,{id:action.id}]
+            return{text:action['text']}
         default:
             return state
     }

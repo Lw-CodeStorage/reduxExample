@@ -1,11 +1,11 @@
 
 import {combineReducers} from 'redux'
 import counterReducer from './counter'
-import loginReducer from './isLogin'
+import todoReducer from './todoReducer'
 
 let allReducer = combineReducers({
     conterReducer :counterReducer,
-    isLoggedReducer:loginReducer
+    todoReducer:todoReducer
 })
 
 export default allReducer

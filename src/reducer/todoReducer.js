@@ -1,9 +1,9 @@
- let loginReducer = (state = false, action)=>{
+ let todoReducer = (state = [], action)=>{
     switch (action.type){
         case 'sign_in' :
-            return !state
+            return true
         default:
             return false
     }
 }
-export default loginReducer
+export default todoReducer
