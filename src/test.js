@@ -14,6 +14,8 @@ export default function Test() {
     }, [])
 
     React.useEffect(()=>{
+        //當dispatch觸發一個Action時，useSelector會得到新的值
+        //有點像是監聽了dispatch的動作
         console.log('重整了');
     })
 
